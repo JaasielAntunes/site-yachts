@@ -39,3 +39,132 @@ a:hover {
 .header {
   display: none;
 }
+
+.section1 {
+  float: left;
+  width: 100%;
+}
+
+.estatisticas {
+  background: white;
+  max-width: 960px;
+  width: 90%;
+  padding: 30px 0;
+  margin: -40px auto 0 auto; /* topo direita inferior esquerda */
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -wekit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.estatisticas-item span {
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.estatisticas-item p {
+  font-size: 20px;
+}
+
+.search-box {
+  text-align: center;
+  color: white;
+  padding: 100px 0;
+  background-image: url(./images/bg-search.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.search-box h1 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.search-box .tagline {
+  font-size: 26px;
+}
+
+.search-box form {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+.search-box form input[type="search"] {
+  width: 100%;
+  height: 50px;
+  font-size: inherit;
+  color: #2c3e50;
+  padding: 0 70px 0 10px;
+  border-radius: 8px;
+  outline: 0; /* remove borda ao clicar no input */
+  -webkit-border-radius: 8px; /*propriedade para os navegadores entenderem o parâmetro */
+}
+
+.search-box form button {
+  background: #2c3e50;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  color: white;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.search-box form button:hover {
+  background: #2219a3;
+  transition: 0.6s;
+}
+
+/* Responsividade Mobile (Máximo) */
+@media (max-width: 768px) {
+  .estatisticas {
+    flex-direction: column;
+  }
+
+  .estatisticas-item {
+    min-width: 90%;
+  }
+
+  .estatisticas-item:not(:last-of-type) { /* realizar alterações em tudo menos no último */
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+/* (Minimo) */
+@media (min-width: 768px) {
+
+  .search-box {
+    padding: 160px 0;
+  }
+
+  .estatisticas {
+    margin-top: -45px;
+  }
+
+  .estatisticas-item {
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .estatisticas-item:not(:last-of-type) {
+    border-right: 1px solid #ccc;
+  }
+}
