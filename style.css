@@ -90,7 +90,6 @@ a:hover {
 .row {
   float: left;
   width: 100%;
-  margin-bottom: 60px;
 }
 
 .load-more {
@@ -107,7 +106,7 @@ a:hover {
 }
 
 .load-more:hover {
-  color: #194ad3;
+  background: #46cee6;
   border: 1px solid #194ad3;
 }
 
@@ -205,6 +204,44 @@ a:hover {
 
 .destinos-col {
   margin-bottom: 20px;
+}
+
+.parallax {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  padding: 160px 0;
+  margin: 60px 0;
+  background-image: url(./images/bg-paralax.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.parallax h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.parallax button {
+  background: #194ad3;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 20px;
+  color: white;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.parallax button:hover {
+  background: #1a8ed1;
 }
 
 .estatisticas {
