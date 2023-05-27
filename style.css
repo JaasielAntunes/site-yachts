@@ -44,14 +44,21 @@ a:hover {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   padding-top: 30px;
   z-index: 6;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header .logo img {
   max-width: 140px;
+}
+
+.header.fixed {
+  background: #2c3e50;
+  padding: 10px 0 5px 0;
 }
 
 .section1 {
@@ -83,6 +90,25 @@ a:hover {
 .row {
   float: left;
   width: 100%;
+  margin-bottom: 60px;
+}
+
+.load-more {
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 17px;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.load-more:hover {
+  color: #194ad3;
+  border: 1px solid #194ad3;
 }
 
 .box {
@@ -323,7 +349,7 @@ a:hover {
 
   .header .nav {
     float: right;
-    margin: 20px;
+    margin: 12px;
   }
 
   .header .nav ul li {
@@ -348,6 +374,7 @@ a:hover {
   }
 
   .estatisticas-item {
+    color: #194ad3;
     text-align: center;
     display: flex;
     flex: 1;
@@ -361,6 +388,7 @@ a:hover {
   .destinos-col {
     width: 49%;
     margin-right: 2%;
+    margin-bottom: 2%;
     float: left;
   }
 
@@ -370,6 +398,22 @@ a:hover {
 
   .destinos-col:first-child {
     width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .destinos-col:nth-child(odd),
+  .destinos-col {
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .destinos-col:nth-of-type(3n+2) {
+    margin-right: 0;
+  }
+
+  .destinos-col:first-child {
+    width: 66%;
   }
 }
 
