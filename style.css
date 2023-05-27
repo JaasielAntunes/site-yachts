@@ -215,9 +215,6 @@ a:hover {
   padding: 160px 0;
   margin-top: 60px;
   background-image: url(./images/bg-paralax.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .parallax h1 {
@@ -274,9 +271,6 @@ a:hover {
   color: white;
   padding: 100px 0;
   background-image: url(./images/bg-search.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .search-box h1 {
@@ -334,11 +328,7 @@ a:hover {
 
 .clientes {
   padding: 100px 0;
-  margin: 60px 0;
   background-image: url(./images/bg-testemunhas.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .clientes-article {
@@ -381,6 +371,67 @@ a:hover {
 .clientes-article .name {
   color: #194ad3;
   font-weight: bold;
+}
+
+.footer {
+  background: #181818;
+  float: left;
+  width: 100%;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-col {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.footer-col h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-col .links-uteis li {
+  padding: 10px 0;
+}
+
+.footer-col .links-uteis li a:hover {
+  transition: all .5s ease-in-out;
+  color: #05ffac;
+}
+
+.footer-col .links-uteis li:not(:last-of-type) {
+  border-bottom: 1px solid white; 
+}
+
+.redes-sociais li {
+  padding: 10px 0;
+}
+
+.redes-sociais li a:hover {
+  transition: all .5s ease-in-out;
+  color: #05ffac;
+}
+
+.redes-sociais li .fab {
+  background: #000;
+  font-size: 20px;
+  margin-right: 5px;
+  width: 35px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.copyright {
+  font-size: 12px;
+  padding-top: 20px;
+  border-top: 1px solid white;
+  color: #194ad3;
 }
 
 /* Responsividade Mobile (Máximo) */
@@ -430,6 +481,10 @@ a:hover {
     padding-bottom: 14px;
     border-bottom: 1px solid #ccc;
   }
+
+  .footer-col {
+    text-align: justify;
+  }
 }
 
 /* (Minimo) */
@@ -454,6 +509,7 @@ a:hover {
   }
 
   .header .nav ul li a:hover {
+    transition: all .4s ease-in-out;
     color: #05ffac;
   }
 
@@ -512,6 +568,38 @@ a:hover {
   .clientes-article:last-of-type {
     margin-right: 0;
   }
+
+  .footer-col {
+    width: 33%;
+    text-align: justify;
+  }
+
+  .footer-col:nth-child(2) {
+    width: 18%;
+    margin-left: 12%;
+  }
+
+  .footer-col:nth-child(3) {
+    width: 25%;
+    float: right;
+  }
+}
+
+@media (min-width: 960px) {
+  .footer-col {
+    width: 40%;
+    text-align: justify;
+  }
+
+  .footer-col:nth-child(2) {
+    width: 17%;
+    margin-left: 10%;
+  }
+
+  .footer-col:nth-child(3) {
+    width: 20%;
+    float: right;
+  }
 }
 
 @media (min-width: 900px) {
@@ -549,5 +637,12 @@ a:hover {
 
 .fl-right {
   float: right;
+}
+
+.bg-fixed {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 /* classes auxiliares */
