@@ -37,6 +37,10 @@ img {
   max-width: 100%;
   border: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /* estilização inicial */
 
 a:hover {
@@ -302,7 +306,7 @@ a:hover {
 }
 
 .search-box form button {
-  background: #2c3e50;
+  background: #1f71c4;
   position: absolute;
   width: 50px;
   height: 50px;
