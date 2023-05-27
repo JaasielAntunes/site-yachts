@@ -328,6 +328,10 @@ a:hover {
   transition: 0.6s;
 }
 
+.destaques-col {
+  margin-bottom: 20px;
+}
+
 /* Responsividade Mobile (Máximo) */
 @media (max-width: 767.9px) {
   .nav-toggle {
@@ -435,6 +439,17 @@ a:hover {
 
   .destinos-col:first-child {
     width: 100%;
+  }
+
+  .destaques-col {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+  }
+
+  .destaques-col:nth-of-type(2n+0) {
+    margin-right: 0;
   }
 }
 
