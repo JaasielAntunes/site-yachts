@@ -222,7 +222,6 @@ a:hover {
 }
 
 .parallax h1 {
-  text-transform: uppercase;
   font-size: 35px;
   margin-bottom: 10px;
 }
@@ -477,6 +476,7 @@ a:hover {
   }
 
   .estatisticas-item {
+    color: #194ad3;
     min-width: 90%;
   }
 
